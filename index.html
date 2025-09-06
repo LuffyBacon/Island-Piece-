@@ -9,49 +9,70 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
       text-align: center;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #ff5733, #ff784e);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
     }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     header {
       padding: 40px 20px;
       background: rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in-out;
     }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 1.2rem;
     }
+
     .buttons {
       margin: 30px 0;
+      animation: fadeIn 3s ease-in-out;
     }
+
     .btn {
       display: inline-block;
       margin: 10px;
       padding: 15px 30px;
       font-size: 1.1rem;
       color: white;
-      background: #ff5733;
+      background: #222;
       border: none;
       border-radius: 12px;
       text-decoration: none;
-      transition: 0.3s;
+      transition: 0.4s;
+      box-shadow: 0 0 10px #fff;
     }
+
     .btn:hover {
-      background: #ff784e;
-      transform: scale(1.05);
+      background: #444;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #fffa, 0 0 40px #ff784e;
     }
+
     footer {
       margin-top: 40px;
       padding: 20px;
       font-size: 1rem;
       background: rgba(0, 0, 0, 0.4);
+      animation: fadeIn 4s ease-in-out;
     }
-    .logo {
-      width: 200px;
-      margin-top: 20px;
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -59,7 +80,6 @@
   <header>
     <h1>ISLAND PIECE 1K VISITS CELEBRATION 🎉</h1>
     <p>Battle Royale, fight players across islands, and join epic events!</p>
-    <img class="logo" src="https://tr.rbxcdn.com/6f7a6213f33ff66397a57c3c8b45e4cf/420/420/Image/Png" alt="Island Piece Logo">
   </header>
 
   <div class="buttons">
@@ -75,4 +95,5 @@
   </footer>
 </body>
 </html>
+
 
