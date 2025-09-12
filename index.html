@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Island Piece 1K Celebration</title>
   <style>
-    /* Reset + fonts */
     * {
       margin: 0;
       padding: 0;
@@ -18,16 +17,12 @@
       overflow-x: hidden;
       text-align: center;
     }
-
-    /* Particle canvas */
     #particles {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
       z-index: -1;
     }
-
-    /* Header */
     header {
       padding: 40px 20px 20px;
       animation: fadeInDown 1.5s ease;
@@ -41,8 +36,6 @@
       margin-top: 10px;
       font-size: 1.2rem;
     }
-
-    /* Buttons */
     .button-container {
       margin: 30px 0;
       display: flex;
@@ -66,7 +59,6 @@
     .btn:hover {
       transform: scale(1.1);
     }
-
     @keyframes rainbowGlow {
       0% { box-shadow: 0 0 10px red; }
       20% { box-shadow: 0 0 15px orange; }
@@ -75,8 +67,6 @@
       80% { box-shadow: 0 0 15px blue; }
       100% { box-shadow: 0 0 15px purple; }
     }
-
-    /* Slideshow */
     .slideshow {
       max-width: 800px;
       margin: 50px auto;
@@ -96,21 +86,16 @@
       display: block;
       animation: fadeSlide 1s ease;
     }
-
     @keyframes fadeSlide {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* Footer */
     footer {
       margin: 40px 0 20px;
       font-size: 0.9rem;
       opacity: 0.7;
       animation: fadeInUp 3s ease;
     }
-
-    /* Animations */
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -126,7 +111,6 @@
   </style>
 </head>
 <body>
-  <!-- Background Particles -->
   <canvas id="particles"></canvas>
 
   <header>
@@ -134,9 +118,8 @@
     <p>Weekly Updates for a Month • Battle Royale across Islands</p>
   </header>
 
-  <!-- Buttons -->
   <div class="button-container">
-    <a href="https://www.roblox.com/events/2609710510127186486" target="_blank">
+    <a href="https://www.roblox.com/events/6497952889044730350" target="_blank">
       <button class="btn">🎉 Celebration Event</button>
     </a>
     <a href="https://www.roblox.com/events/2609710510127186486" target="_blank">
@@ -148,12 +131,14 @@
     <a href="https://www.roblox.com/events/2316750297482658325" target="_blank">
       <button class="btn">🔮 Upcoming Updates</button>
     </a>
+    <a href="https://www.roblox.com/events/6987793153239286287" target="_blank">
+      <button class="btn">📅 This Friday Updates</button>
+    </a>
     <a href="https://www.roblox.com/games/17685143144/Island-Piece-1K-VISITS-ADMIN-ABUSE" target="_blank">
       <button class="btn">🎮 Play Island Piece</button>
     </a>
   </div>
 
-  <!-- Slideshow -->
   <div class="slideshow">
     <div class="slide active">
       <h2>Beginning Update</h2>
@@ -168,27 +153,26 @@
       <p>New <b>weapon released</b>. <b>Disco event</b> + another <b>admin event</b>.</p>
     </div>
     <div class="slide">
-      <h2>Upcoming Thursday</h2>
-      <p>Next <b>disco event</b> with more sneak peeks of the <b>new map</b>.</p>
+      <h2>Last Friday</h2>
+      <p>We added <b>health GUI, stamina GUI, inventory GUI, and new weapons</b> for better gameplay.</p>
     </div>
     <div class="slide">
-      <h2>Upcoming Friday (9/12/25)</h2>
-      <p>This is gonna be our <b>biggest update yet</b>. We are promising players <b>health GUI, stamina GUI, inventory revamp, new sword, new sniper rifle, new sprint to run animation</b> and more <b>admin events</b>.</p>
+      <h2>Next Friday</h2>
+      <p>Stay tuned for sneak peeks on the <b>next update</b>!</p>
     </div>
   </div>
 
   <footer>
-    Credits to RHP Crew for supporting me in this journey
+    Credits to RHP Crew • Made by <b>You</b>
   </footer>
 
   <script>
-    // Particles background
+    // Particles
     const canvas = document.getElementById("particles");
     const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const particlesArray = [];
-
     class Particle {
       constructor() {
         this.x = Math.random() * canvas.width;
@@ -210,7 +194,6 @@
         ctx.fill();
       }
     }
-
     function initParticles() {
       for (let i = 0; i < 100; i++) {
         particlesArray.push(new Particle());
@@ -240,4 +223,5 @@
   </script>
 </body>
 </html>
+
 
